@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christmas Gift Record Keeper</title>
+</head>
+
+<body>
+    <h1>Add a new gift to your family</h1>
+    <form action="/submit" method="post">
+        <input type="text" name="giver" placeholder="Who is this gift from?">
+        <input type="text" name="giftName" placeholder="What is the gift?">
+        <textarea rows="4" cols="50" name="comments" placeholder="Enter any comments"></textarea>
+        <select name="year" placeholder="Year">
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <input type="submit">
+        <a href="/books">See all gifts</a>
+        <a href="/family">See family members</a>
+        <a href="/populated">See your family, and all their gifts!</a>
+    </form>
+</body>
+
+</html>
